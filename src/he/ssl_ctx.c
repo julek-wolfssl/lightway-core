@@ -210,9 +210,9 @@ he_return_code_t he_ssl_ctx_start(he_ssl_ctx_t *ctx) {
     }
   } else {
     if(ctx->use_chacha) {
-      res = wolfSSL_CTX_set_cipher_list(ctx->wolf_ctx, "ECDHE-RSA-CHACHA20-POLY1305");
+      //res = wolfSSL_CTX_set_cipher_list(ctx->wolf_ctx, "TLS13-CHACHA20-POLY1305-SHA256");
     } else {
-      res = wolfSSL_CTX_set_cipher_list(ctx->wolf_ctx, "ECDHE-RSA-AES256-GCM-SHA384");
+      //res = wolfSSL_CTX_set_cipher_list(ctx->wolf_ctx, "TLS13-AES256-GCM-SHA384");
     }
   }
 
